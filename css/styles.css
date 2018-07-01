@@ -1,0 +1,283 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;  
+}
+
+#about-header{
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../images/best.jpg");
+  background-position: center;
+}
+
+#about-transparency{
+  background: rgba(12, 12, 12, 0.31);
+  width: 100%;
+  height: 100vh;
+}
+
+#sidebar {
+  background: #282828;
+  color: #fff;
+  transition: all 0.3s;
+  min-width: 0;
+  max-width: 250px;
+  min-height: 100vh;
+  box-shadow: 4px 4px 12px -3px black;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  font-family: serif;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  overflow-x: hidden;
+  padding-top: 60px;
+  cursor: pointer;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+#logo {
+  font-family: cursive;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+  text-shadow: 2px 2px #852565;
+}
+
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #6d7fcc;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  color:white;
+  background: #c4309096;
+}
+#sidebar ul li a:hover {
+  color:white;
+  background: #fff;
+  text-decoration: none;
+  color: #862566;
+  background: white;
+}
+
+
+#sidebarCollapse{
+  background: transparent !important;
+  border: none;
+  box-shadow: none;
+}
+
+#menu-icon{
+  color: white;
+  font-size: 36px;
+  
+}
+
+#menu-icon:focus{
+  outline: none;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+  color: white;
+  background: #c4309096;
+}
+#sidebar ul ul a {
+  font-size: 1.1em !important;
+  padding-left: 30px !important;
+  background: #282727d1 !important;
+  color:white;
+}
+
+#sidebar ul ul a:hover{
+  background: #282727d1;
+  color: #FF8B8E;
+}
+
+.btn-close{
+  float: right;
+  margin-top: -50px;
+  margin-right: 12px;
+}
+
+#my-intro{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-headline {
+  font-family: cursive;
+  line-height: 1.7em;
+  text-shadow: 2px 2px #852565;
+  text-transform: capitalize;
+  font-size: 60px !important;
+  font-weight: bold !important;  
+  color: white !important;
+  display: block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 4.0s;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+.headline-container{
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 1px 1px 7px 1px black;
+}
+
+@media (max-width:992px){
+  .my-headline{
+    font-size: 29px !important;
+  }
+  .headline-container{
+    margin:0 10px!important;
+  }
+  .circularIntro{
+    height: 22vh !important;
+    width: 22vh !important;
+    margin: 20px auto !important;
+  }
+  #helloText {
+    font-size: 47px !important;
+  }
+  #bitText {
+    font-size: 30px !important;
+  }
+  #aboutMeHeading{
+    font-size: 40px !important;
+  }
+}
+
+@media (min-width:992px){
+
+
+}
+
+.footer-ribbon{
+  position:absolute;
+  margin:-100px 0 0 22px;
+  padding:10px 20px 6px;
+  background: #282828;
+}
+
+.footer-ribbon:before{
+  border-right:10px solid #646464;
+  border-top:16px solid transparent;
+  content:"";
+  display:block;
+  left:-10px;
+  position:absolute;
+  top:0;
+  width:7px;
+}
+
+.footer-ribbon span{
+  color:#FFF;
+  font-size:1.6em;
+  font-family: cursive;
+}
+
+#aboutContainer{
+    margin: 0 !important;
+    padding: 61px 15px;
+    background: #282828;
+}
+
+#portfolio-Img{
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 2px #181515;
+  border: 6px solid white;
+}
+
+#portfolioImgDiv{
+  text-align: center;
+}
+
+#aboutMeHeading{
+  text-align: center;
+  padding: 26px 0;
+  color: white;
+  font-size: 60px;
+  font-family: cursive;
+}
+
+.circularIntro{
+  background: linear-gradient(to right, #5C2E6E , #9F2F83);
+  border-radius: 50%;
+  margin-top: 55px;
+  height: 25vh;
+  width: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px 2px #181515;
+}
+
+.circle-text{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+#helloText{
+  font-size: 90px;
+  color: #fbfbfb;
+}
+
+#bitText{
+  color: white;
+  font-size: 55px;
+}
