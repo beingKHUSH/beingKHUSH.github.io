@@ -18,14 +18,11 @@
     <header id="about-header">
       <div id="about-transparency">
         <div class="wrapper">
-
           <!-- Sidebar -->
           <nav id="sidebar">
             <a href="#" class="btn-close" onclick="closeSlideMenu()"><img src="images/cancel.png" alt=""></a>
               <ul class="list-unstyled components">
-                  <div id="logo">
-                    <p>Khushboo Jain</p>
-                  </div>
+                  <p id="logo">Khushboo Jain</p>                 
                   <li>
                     <a href="#home" data-toggle="collapse" aria-expanded="false">Home</a>        
                   </li>
@@ -56,7 +53,7 @@
           </nav>
 
           <div id="horizontal-header">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light">
               <div class="container-fluid">
                 <button type="button" id="sidebarCollapse" onclick="openSlideMenu()" class="btn btn-lg" >
                     <i class="fas fa-bars" id="menu-icon"></i>                   
@@ -71,21 +68,36 @@
           <div class="container headline-container">
               <h1 class="my-headline ">
                   <span>Hi! I'm Khushboo.</span>
-                  <p></p>
               </h1> 
             </div>             
         </div>   
       </div>
     </header>
     <main>
-      <section>
+      <section id="profileSection">
         <div id="aboutContainer">
           <div class="row">
             <div class="col-12 col-md-5">
               <div id="portfolioImgDiv">
                 <img src="images/khush.jpg" class="img-fluid" id="portfolio-Img" alt="myImage">
               </div>            
-              <h3 id="aboutMeHeading">About me</h3>
+              <h4 id="aboutMeHeading">Follow Me</h4>
+              <div class="social-icons">
+                  <ul class="social-icons">
+                      <li class="twitter">
+                        <a href="https://twitter.com/khush_712" target="_blank" ><img src="images/twitter.png" class="img-fluid" alt="twitter"/></a>
+                      </li>
+                      <li class="facebook">
+                        <a href="https://www.facebook.com/khushboo.jain.167527" target="_blank" ><img src="images/facebook.png" class="img-fluid" alt="facebook"/></a>
+                      </li>
+                      <li class="linkedin">
+                        <a href="https://www.linkedin.com/" target="_blank" ><img src="images/linkedin.png" class="img-fluid" alt="linkedin"/></a>
+                      </li>
+                      <li class="gitHub">
+                        <a href=" https://github.com/beingKHUSH" target="_blank" ><img src="images/github-logo.png" class="img-fluid" alt="github"/></a>
+                      </li>
+                  </ul>
+              </div>
             </div>
             <div class="col-12 col-md-7">
               <div class="row">
@@ -113,25 +125,30 @@
           </div>
         </div>  
       </section>
-      <section>
-        <div class="skillContainer">
-          <div class="row">
-            
+      <section id="developerQuote">
+        <div class="quoteContainer">
+          <div class="row quoteRow">
+            <h2>
+              <span>“Learning HTML and CSS is a lot more challenging than it used to be. Responsive web design adds more layers of complexity to design and develop websites.”</span>
+            </h2>            
           </div>
         </div>
       </section>
       
       
     </main>
-    <!-- <footer>
+    <footer>
       <div class="container">
         <div class="row">
           <div class="footer-ribbon" id="get-in-touch">
             <span>Get in Touch</span>
           </div>
+          <div class="Copyright">
+            <p>© Copyright 2018. All Rights Reserved.</p>
+          </div>
         </div>
       </div>      
-    </footer> -->
+    </footer> 
     <script src="js/function.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

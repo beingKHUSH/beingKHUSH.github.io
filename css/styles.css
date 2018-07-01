@@ -198,6 +198,16 @@ a, a:hover, a:focus {
   #aboutMeHeading{
     font-size: 40px !important;
   }
+  #portfolio-Img{
+    width: 200px !important;
+  }
+  .quoteRow{
+    padding: 18px 30px !important;
+    text-align: justify !important;
+  }
+  .quoteRow h2{
+    font-size: 20px !important;
+  }
 }
 
 @media (min-width:992px){
@@ -238,7 +248,7 @@ a, a:hover, a:focus {
 #portfolio-Img{
   border-radius: 50%;
   box-shadow: 0px 0px 8px 2px #181515;
-  border: 6px solid white;
+
 }
 
 #portfolioImgDiv{
@@ -280,4 +290,58 @@ a, a:hover, a:focus {
 #bitText{
   color: white;
   font-size: 55px;
+}
+
+.social-icons{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons li{
+  float: left;
+  margin-right: 26px;
+}
+
+#developerQuote{
+    background-image: url(../images/htmlBack.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: inherit;
+    background-repeat: no-repeat;
+}
+
+.quoteContainer{
+  background: linear-gradient(to right, #5c2e6e , #9f2f83cf ,#9f2f83cf);
+}
+
+.quoteRow{
+  padding: 120px 150px;
+  text-align: center;
+  margin:0;
+  width: 100%;
+}
+
+.quoteRow h2{
+    font-size: 25px;
+    color: white;
+    line-height: 35px;
+}
+
+footer {
+    background: #0e0e0e;
+    border-top: 4px solid #0e0e0e;
+    font-size: .9em;
+    padding: 80px 0 0;
+    position: relative;
+    clear: both;
+}
+
+.Copyright{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
